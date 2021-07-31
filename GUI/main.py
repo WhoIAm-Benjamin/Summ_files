@@ -35,8 +35,9 @@ class MainWindow(QtWidgets.QMainWindow, design.Ui_MainWindow):
 
     def dragEnterEvent(self, e):
         path = e.mimeData().urls()[0].path()[1:]
-        self.listing.addItem(path)
-        self.files.append(path.replace('/', '\\'))
+        if path not in self.files:
+            self.listing.addItem(path)
+            self.files.append(path.replace('/', '\\'))
         self.button_ok.setEnabled(True)
         self.reset.setEnabled(True)
 
@@ -80,8 +81,9 @@ class MainWindow(QtWidgets.QMainWindow, design.Ui_MainWindow):
     def sizer(self, directory):
         if os.path.isdir(directory):
             self.walker(directory)
+        else:
         # здесь косяк №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№
-        self.size += os.path.getsize(directory)
+            self.size += os.path.getsize(directory)
 
     def cleaner(self):
         self.listing.clear()
