@@ -65,22 +65,12 @@ color: rgb(175, 181, 255);</string>
 background-color: rgb(8, 0, 35);</string>
     </property>
    </widget>
-   <widget class="QTableView" name="table">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>360</y>
-      <width>650</width>
-      <height>130</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QPushButton" name="button_ok">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>313</y>
-      <width>650</width>
+      <width>561</width>
       <height>38</height>
      </rect>
     </property>
@@ -88,7 +78,7 @@ background-color: rgb(8, 0, 35);</string>
      <font>
       <family>Cambria</family>
       <pointsize>14</pointsize>
-      <italic>true</italic>
+      <italic>false</italic>
      </font>
     </property>
     <property name="styleSheet">
@@ -97,6 +87,49 @@ border-color: rgb(0, 1, 77);</string>
     </property>
     <property name="text">
      <string>OK</string>
+    </property>
+   </widget>
+   <widget class="QListView" name="listing_view">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>651</width>
+      <height>131</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listing">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>651</width>
+      <height>131</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reset">
+    <property name="geometry">
+     <rect>
+      <x>579</x>
+      <y>313</y>
+      <width>83</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cambria</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(154, 181, 255);
+border-color: rgb(0, 1, 77);</string>
+    </property>
+    <property name="text">
+     <string>Reset</string>
     </property>
    </widget>
   </widget>
