@@ -40,6 +40,7 @@ class Ui_Dialog(object):
         self.total_size.setFont(font)
         self.total_size.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.total_size.setMidLineWidth(4)
+        self.total_size.setText("")
         self.total_size.setAlignment(QtCore.Qt.AlignCenter)
         self.total_size.setObjectName("total_size")
         self.pushButton = QtWidgets.QPushButton(Dialog)
@@ -58,5 +59,4 @@ class Ui_Dialog(object):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
         self.total_size_label.setText(_translate("Dialog", "Total size:"))
-        self.total_size.setText(_translate("Dialog", "1 GB"))
         self.pushButton.setText(_translate("Dialog", "OK"))
