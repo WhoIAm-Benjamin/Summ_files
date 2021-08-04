@@ -45,7 +45,7 @@ color: rgb(175, 181, 255);</string>
      <string>Drag and drop files or folder</string>
     </property>
    </widget>
-   <widget class="QWidget" name="dragAndDrop" native="true">
+   <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -62,7 +62,17 @@ color: rgb(175, 181, 255);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">border-color: rgb(151, 250, 255);
-background-color: rgb(8, 0, 35);</string>
+selection-background-color: rgb(10, 0, 42);</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>650</width>
+      <height>130</height>
+     </rect>
     </property>
    </widget>
    <widget class="QPushButton" name="button_ok">
@@ -70,7 +80,7 @@ background-color: rgb(8, 0, 35);</string>
      <rect>
       <x>10</x>
       <y>313</y>
-      <width>561</width>
+      <width>650</width>
       <height>38</height>
      </rect>
     </property>
@@ -78,7 +88,7 @@ background-color: rgb(8, 0, 35);</string>
      <font>
       <family>Cambria</family>
       <pointsize>14</pointsize>
-      <italic>false</italic>
+      <italic>true</italic>
      </font>
     </property>
     <property name="styleSheet">
@@ -87,49 +97,6 @@ border-color: rgb(0, 1, 77);</string>
     </property>
     <property name="text">
      <string>OK</string>
-    </property>
-   </widget>
-   <widget class="QListView" name="listing_view">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>360</y>
-      <width>651</width>
-      <height>131</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QListWidget" name="listing">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>360</y>
-      <width>651</width>
-      <height>131</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="reset">
-    <property name="geometry">
-     <rect>
-      <x>579</x>
-      <y>313</y>
-      <width>83</width>
-      <height>38</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Cambria</family>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(154, 181, 255);
-border-color: rgb(0, 1, 77);</string>
-    </property>
-    <property name="text">
-     <string>Reset</string>
     </property>
    </widget>
   </widget>
